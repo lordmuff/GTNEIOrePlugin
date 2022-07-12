@@ -1,5 +1,7 @@
 package pers.gwyog.gtneioreplugin.plugin.item;
 
+import cpw.mods.fml.common.FMLCommonHandler;
+import cpw.mods.fml.relauncher.Side;
 import java.util.Objects;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
@@ -17,7 +19,9 @@ public class ItemDimensionDisplay extends ItemBlock {
         super(block);
         setCreativeTab(GTNEIOrePlugin.creativeTab);
 
-        MinecraftForgeClient.registerItemRenderer(this, new ItemDimensionDisplayRenderer());
+        if (FMLCommonHandler.instance().getEffectiveSide() == Side.CLIENT) {
+            MinecraftForgeClient.registerItemRenderer(this, new ItemDimensionDisplayRenderer());
+        }
     }
 
     public static ItemStack getItem(String dimension) {
