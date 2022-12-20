@@ -194,10 +194,10 @@ public class GT5OreSmallHelper {
             this.amountPerChunk = worldGen.mAmount;
             try {
                 this.oreMaterial = GT_OreDictUnificator.getAssociation(
-                    new ItemStack(GregTech_API.sBlockOres1, 1, worldGen.mMeta))
-                    .mMaterial
-                    .mMaterial;
-            } catch(Exception e) {
+                                new ItemStack(GregTech_API.sBlockOres1, 1, worldGen.mMeta))
+                        .mMaterial
+                        .mMaterial;
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
