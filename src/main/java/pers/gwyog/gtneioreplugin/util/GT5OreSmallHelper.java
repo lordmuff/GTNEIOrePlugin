@@ -185,17 +185,21 @@ public class GT5OreSmallHelper {
             return oreMaterial;
         }
 
-        private final Materials oreMaterial;
+        private Materials oreMaterial = null;
 
         public OreSmallWrapper(GT_Worldgen_GT_Ore_SmallPieces worldGen) {
             this.oreGenName = worldGen.mWorldGenName;
             this.oreMeta = worldGen.mMeta;
             this.worldGenHeightRange = worldGen.mMinY + "-" + worldGen.mMaxY;
             this.amountPerChunk = worldGen.mAmount;
-            this.oreMaterial = GT_OreDictUnificator.getAssociation(
-                            new ItemStack(GregTech_API.sBlockOres1, 1, worldGen.mMeta))
+            try {
+                this.oreMaterial = GT_OreDictUnificator.getAssociation(
+                    new ItemStack(GregTech_API.sBlockOres1, 1, worldGen.mMeta))
                     .mMaterial
                     .mMaterial;
+            } catch(Exception e) {
+                e.printStackTrace();
+            }
         }
 
         public List<ItemStack> getMaterialDrops(int maximumIndex) {

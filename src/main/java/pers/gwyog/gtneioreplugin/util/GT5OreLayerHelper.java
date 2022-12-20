@@ -113,9 +113,7 @@ public class GT5OreLayerHelper {
                                 new ItemStack(GregTech_API.sBlockOres1, 1, worldGen.mSporadicMeta))
                         .mMaterial
                         .mMaterial;
-            } catch (Exception ignored) {
-
-            }
+            } catch (Exception ignored) {}
 
             this.size = worldGen.mSize;
             this.density = worldGen.mDensity;
