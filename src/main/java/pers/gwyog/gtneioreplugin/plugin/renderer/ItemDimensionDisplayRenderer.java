@@ -106,8 +106,15 @@ public class ItemDimensionDisplayRenderer implements IItemRenderer {
             case "TE":
             case "VB":
                 return 8L;
-            case "DD":
+            case "An":
+            case "Ho":
+            case "Np":
+            case "Mh":
+            case "MB":
+            case "Se":
                 return 9L;
+            case "DD":
+                return 10L;
             default:
                 return -1L;
         }
