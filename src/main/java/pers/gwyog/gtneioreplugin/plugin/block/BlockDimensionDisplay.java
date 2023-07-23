@@ -5,6 +5,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
+
 import pers.gwyog.gtneioreplugin.plugin.renderer.ItemDimensionDisplayRenderer;
 
 public class BlockDimensionDisplay extends Block {
