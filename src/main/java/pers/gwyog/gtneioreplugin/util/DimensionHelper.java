@@ -95,8 +95,8 @@ public class DimensionHelper {
             // T9
             "An", // GalacticraftAmunRa_Anubis
             "Ho", // GalacticraftAmunRa_Horus
-            "MB", // GalacticraftAmunRa_Mehen Belt
             "Mh", // GalacticraftAmunRa_Maahes
+            "MB", // GalacticraftAmunRa_Mehen Belt
             "Np", // GalacticraftAmunRa_Neper
             "Se", // GalacticraftAmunRa_Seth
             // T10
