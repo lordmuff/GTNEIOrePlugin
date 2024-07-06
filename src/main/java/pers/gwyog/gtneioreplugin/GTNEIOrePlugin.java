@@ -27,7 +27,7 @@ import pers.gwyog.gtneioreplugin.util.GT5UndergroundFluidHelper;
         dependencies = "required-after:gregtech;required-after:NotEnoughItems")
 public class GTNEIOrePlugin {
 
-    public static final String MODID = "gtneioreplugin";
+    public static final String MODID = "gt5neioreplugin";
     public static final String NAME = "GT NEI Ore Plugin GT:NH Mod";
     public static final String VERSION = Tags.VERSION;
     public static final Logger LOG = LogManager.getLogger(NAME);
